@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout | Ian's Biashara Grid</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="top"><div class="bar"><a class="logo" href="index.html"><span class="mk">IB</span>Ian's Biashara Grid</a><a class="btn alt" href="index.html#shop">Continue shopping</a></div></header>
+<main class="wrap" id="wrap"><h1>Checkout</h1>
+<div class="co"><form id="form" class="panel"><h2>Your details</h2>
+<label>Full name<input id="name" required autocomplete="name" placeholder="e.g. Wanjiku Kamau"></label>
+<label>Phone number<input id="phone" required inputmode="tel" autocomplete="tel" placeholder="0712 345 678 or 0733 123 456"></label>
+<label>Email (optional)<input id="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+<label>Delivery / service location<select id="area"></select></label>
+<label>Street, estate or landmark<input id="addr" required placeholder="e.g. Kasarani, near Safari Park Hotel"></label>
+<h2>Payment method</h2><div class="pm">
+<label class="opt"><input type="radio" name="net" value="mpesa" checked><span><b>Safaricom M-Pesa</b><small>STK Push prompt on your phone</small></span></label>
+<label class="opt"><input type="radio" name="net" value="airtel"><span><b>Airtel Money</b><small>Payment prompt on your Airtel line</small></span></label></div>
+<p class="mut">We send a prompt to the phone number above. Enter your PIN to pay.</p>
+<div id="status" role="status" aria-live="polite"></div>
+<button id="go" class="btn big full">Pay now</button>
+<p class="mut small">Prefer to pay manually? Send money to 0705191795 (Ian's Biashara Grid) and call us with your name.</p></form>
+<aside class="panel sum"><h2>Order summary</h2><div id="lines"></div>
+<div class="sl"><span>Subtotal</span><b id="sub"></b></div><div class="sl"><span>Delivery</span><b id="fee"></b></div>
+<div class="sl tot"><span>Total</span><b id="tot"></b></div></aside></div></main>
+<script src="products.js"></script><script src="cart.js"></script><script src="config.js"></script><script src="checkout.js"></script></body></html>

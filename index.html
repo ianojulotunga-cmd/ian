@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ian's Biashara Grid | Gadgets, appliances and IT services in Kenya</title>
+<meta name="description" content="Shop home appliances, computer accessories, electronics and IT services. Pay with M-Pesa or Airtel Money.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="top"><div class="bar"><a class="logo" href="./"><span class="mk">IB</span>Ian's Biashara Grid</a>
+<form id="sf" class="search" role="search"><input id="q" type="search" placeholder="Search products, brands or services" aria-label="Search"><button class="btn">Search</button></form>
+<button id="cartBtn" class="cartbtn" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2L20 7H6.2M9 20h.01M17 20h.01"/></svg><b id="count">0</b></button></div>
+<nav class="cats" id="nav"><button data-f="all" class="on">All</button><button data-f="kitchen">Home &amp; Kitchen</button><button data-f="computer">Computer Accessories</button><button data-f="electronics">Electronics</button><button data-f="service">IT Services</button></nav></header>
+<section class="hero"><div class="hw"><div class="ht"><h1>Quality gadgets, appliances and IT services, delivered across Kenya.</h1>
+<p>Shop smart and pay from your phone with M-Pesa or Airtel Money. No cards, no queues.</p>
+<p><a class="btn big" href="#shop">Shop now</a> <a class="btn big alt" href="#services">Book an IT service</a></p></div>
+<div class="hi" id="hero"></div></div></section>
+<section class="wrap"><h2>Shop by category</h2><div class="tiles" id="tiles">
+<button data-f="kitchen"><svg viewBox="0 0 24 24"><path d="M5 10h14l-1 10H6zM8 10V6h8v4M12 6V3"/></svg>Home &amp; Kitchen</button>
+<button data-f="computer"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="11" rx="1"/><path d="M2 20h20"/></svg>Computer Accessories</button>
+<button data-f="electronics"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg>Electronics</button>
+<button data-f="service"><svg viewBox="0 0 24 24"><path d="M14 6a4 4 0 0 0 5 5l-9 9a2 2 0 0 1-3-3l9-9z"/></svg>IT Services</button></div></section>
+<section class="wrap"><h2>Featured products</h2><div class="grid" id="featured"></div></section>
+<section class="wrap"><h2>Popular right now</h2><div class="grid" id="popular"></div></section>
+<section class="wrap" id="shop"><h2>All products</h2><p id="result" class="mut"></p><div class="grid" id="grid"></div></section>
+<section class="wrap" id="services"><h2>IT services</h2><p class="mut">Book a technician. We confirm your appointment by phone.</p><div class="grid" id="svc"></div></section>
+<section class="why"><div class="wrap"><h2>Why choose Ian's Biashara Grid</h2><div class="wg">
+<div><h3>Pay from your phone</h3><p>M-Pesa and Airtel Money prompts, straight to your handset.</p></div>
+<div><h3>Delivery across Kenya</h3><p>Nairobi and major towns, or pick up from our shop.</p></div>
+<div><h3>Real IT support</h3><p>Repairs, setup and networking by people who know computers.</p></div>
+<div><h3>Clear prices</h3><p>Every price is in Kenyan shillings, with no hidden charges.</p></div></div></div></section>
+<footer><div class="wrap fg"><div><b>Ian's Biashara Grid</b><p>Goods and IT services for homes and offices in Kenya.</p></div>
+<div><b>Contact</b><p>Phone / WhatsApp: 0705191795</p></div>
+<div><b>We accept</b><p>Safaricom M-Pesa and Airtel Money</p></div></div><p class="cp">© 2026 Ian's Biashara Grid. A student project; payments run on test credentials. Some product photos come from Wikimedia Commons and Openverse; credits are shown on each product's details.</p></footer>
+<aside id="drawer" hidden aria-label="Shopping cart"><div class="dh"><h2>Your cart</h2><button id="close" class="x" aria-label="Close cart">✕</button></div>
+<div id="items"></div><div class="dt"><span>Subtotal</span><strong id="sub">KSh 0</strong></div>
+<a id="co" class="btn big full" href="checkout.html">Proceed to checkout</a></aside>
+<dialog id="detail"><button class="x" id="dclose" aria-label="Close">✕</button><div id="dbody" class="dgrid"></div></dialog>
+<script src="products.js"></script><script src="cart.js"></script><script src="app.js"></script></body></html>
